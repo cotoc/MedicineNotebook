@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" >
+
+    <PreferenceCategory android:title="@string/alerm_time_preference" >
+        <jp.iftc.medicinenotebook.preference.TimePickerPreference
+            android:key="alerm_morning"
+            android:summary="@string/pref_morning_summary"
+            android:title="@string/pref_morning"
+	        android:dialogTitle="- 時間設定 -"
+	        android:dialogMessage="朝食の時間"
+	        defaultHour="6"
+	        defaultMinute="30"
+	        is24Hour="true"
+	        />
+        <jp.iftc.medicinenotebook.preference.TimePickerPreference
+            android:key="alerm_lunch"
+            android:summary="@string/pref_lunch_summary"
+            android:title="@string/pref_lunch"
+	        android:dialogTitle="- 時間設定 -"
+	        android:dialogMessage="昼食の時間"
+	        defaultHour="12"
+	        defaultMinute="00"
+	        is24Hour="true"
+	    />
+        <jp.iftc.medicinenotebook.preference.TimePickerPreference
+            android:key="alerm_dinner"
+            android:summary="@string/pref_dinner_summary"
+            android:title="@string/pref_dinner"
+	        android:dialogTitle="- 時間設定 -"
+	        android:dialogMessage="夕食の時間"
+	        defaultHour="18"
+	        defaultMinute="30"
+	        is24Hour="true"
+	    />
+        <jp.iftc.medicinenotebook.preference.TimePickerPreference
+            android:key="alerm_night"
+            android:summary="@string/pref_night_summary"
+            android:title="@string/pref_night"
+            android:dialogTitle="- 時間設定 -"
+	        android:dialogMessage="就寝の時間"
+	        defaultHour="21"
+	        defaultMinute="00"
+	        is24Hour="true"
+	    />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/intake_timming_preference" >
+        <EditTextPreference
+            android:key="alerm_befor"
+            android:summary="@string/pref_befor_summary"
+            android:title="@string/pref_befor"
+            android:inputType="number"
+            android:maxLength="2"
+            android:defaultValue="30" />
+        <EditTextPreference
+            android:key="alerm_after"
+            android:summary="@string/pref_after_summary"
+            android:title="@string/pref_after"
+            android:inputType="number"
+            android:maxLength="2"
+            android:defaultValue="30" />
+        <EditTextPreference
+            android:key="alerm_between"
+            android:summary="@string/pref_between_summary"
+            android:title="@string/pref_between"
+            android:inputType="number"
+            android:maxLength="2"
+            android:defaultValue="2" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/alerm_preference" >
+        <CheckBoxPreference
+            android:key="alerm_on"
+            android:summary="@string/pref_alerm_on_summary"
+            android:title="@string/pref_alerm_on"
+        />
+        <RingtonePreference 
+		    android:key="alarm_sound" 
+		    android:summary="@string/pref_alarm_sound_summary" 
+		    android:title="@string/pref_alarm_sound"
+		    android:ringtoneType="all">
+		</RingtonePreference>
+        <CheckBoxPreference
+            android:key="alerm_vibrator"
+            android:summary="@string/pref_vibrator_summary"
+            android:title="@string/pref_vibrator"
+        />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

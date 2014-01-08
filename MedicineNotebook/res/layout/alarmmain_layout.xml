@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/notes_s" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtVw_alarm_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="2012/07/23"
+            android:textColor="@color/dark_blue"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtVw_alarm_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="お薬の時間ですよ！"
+            android:textSize="25dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/msg_alarm" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/image_timming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_tab_morning" />
+
+            <TextView
+                android:id="@+id/txtVw_alarm_timing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="昼　食前"
+                android:textColor="@color/gray"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_alarmlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" >
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_alarm_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_button"
+            android:text="閉じる"
+            android:textColor="@color/white"
+            android:textSize="@dimen/padding_large" />
+
+    </LinearLayout>
+
+</FrameLayout>

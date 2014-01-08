@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="アラームの時刻設定">
+        <EditTextPreference android:dialogLayout="@layout/timepicker_layout" android:dialogMessage="時刻入力" android:defaultValue="07:00" android:dialogTitle="時刻入力"/>
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

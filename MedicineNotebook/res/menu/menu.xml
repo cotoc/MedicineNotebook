@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_input"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/s_menu_input"
+        >
+    </item>
+<!--     <item
+        android:id="@+id/menu_delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/s_menu_delete"
+        >
+    </item> -->
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/s_menu_setting"
+        >
+    </item>
+    <item
+        android:id="@+id/menu_exit"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/s_menu_exit"
+        >
+    </item>
+    <item
+        android:id="@+id/menu_import"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/s_menu_import"
+        >
+    </item>
+    <item
+        android:id="@+id/menu_about_this"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="@string/s_menu_about"
+        >
+    </item>
+</menu>

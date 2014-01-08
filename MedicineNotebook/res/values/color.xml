@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="finder_frame">#aaffffff</color>
+    <color name="finder_laser">#ffff0000</color>
+    <color name="finder_mask">#60000000</color>
+    <color name="result_mask">#b0000000</color>
+    <color name="list_default">#ffffff</color>
+    <color name="list_selected">#92ccf8</color>
+    <color name="list_checked">#cce5f8</color>
+    <color name="list_header">#77AAEE</color>
+    <color name="list_detaile">#10000000</color>
+    <color name="dialog_detaile_colname">#34CFBE</color>
+    <color name="dialog_detaile_middle_title">#4577D4</color>
+    <color name="dialog_detaile_alert">#FF0D00</color>
+    <color name="dialog_detaile_info">#FFB000</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#81efb4</color>
+    <color name="blue">#e0ecf5</color>
+    <color name="red">#1924b1</color>
+    <color name="black">#000000</color>
+    <color name="gray">#6C757B</color>
+    <color name="dark_blue">#133aac</color>
+    <color name="back_ground">#4986d0</color>
+    <color name="light_blue">#6f92d1</color>
+</resources>

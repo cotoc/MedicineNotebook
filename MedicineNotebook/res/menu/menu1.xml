@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/menu1_input"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/s_menu_input"
+        >
+    </item>
+    <item
+        android:id="@+id/menu1_setting"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/s_menu_setting"
+        >
+    </item>
+    <item
+        android:id="@+id/menu1_exit"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/s_menu_exit"
+        >
+    </item>
+   
+</menu>

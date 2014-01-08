@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="SpnItm_med1">
+        <item>錠剤</item>
+        <item>細粒</item>
+        <item>シロップ</item>
+        <item>カプセル</item>
+        <item>湿布</item>
+        <item>塗り薬</item>
+        <item>点眼薬</item>
+        <item>座薬</item>
+        <item>その他(固形)</item>
+        <item>その他(液体)</item>
+        <item>その他(軟膏)</item>
+        </string-array>
+    <string-array name="SpnItm_med2">
+        <item>経口</item>
+        <item>点眼</item>
+        <item>塗布</item>
+        <item>挿入</item>
+        <item>その他</item>
+    </string-array>
+    <string-array name="SpnItm_med3">
+        <item>食前</item>
+        <item>食後</item>
+        <item>食間</item>
+        <item>食直前</item>
+        <item>食直後</item>
+    </string-array>
+    <string-array name="MedItmUnit">
+        <item>錠</item>
+        <item>包</item>
+        <item>ml</item>
+        <item>個</item>
+        <item>枚</item>
+        <item>mg</item>
+        <item>ml</item>
+        <item>個</item>
+        <item>個</item>
+        <item>ml</item>
+        <item>mg</item>
+        </string-array>
+</resources>

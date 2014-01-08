@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="　" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtvw_date"
+            style="@style/NomalStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2012/06/15" />
+
+        <TextView
+            android:id="@+id/txtvw_rowno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/NomalStyle"
+            android:text="登録 No.01" android:gravity="center">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NomalStyle"
+            android:text="病院名　" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtvw_hospname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/NomalStyle"
+            android:text="横浜私立病院" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NomalStyle"
+            android:text="薬局名　" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtvw_pharname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/NomalStyle"
+            android:text="横浜調剤薬局" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="　" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/NomalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="薬名" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_medicine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoText="true"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:nextFocusDown="@+id/medinput_Spn_unit"
+            android:singleLine="true"
+            android:textColor="@color/black" >
+
+            <requestFocus />
+        </AutoCompleteTextView><Button
+            android:id="@+id/btn_voice_recognition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_btn_speak_now" />
+
+       </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NomalStyle"
+            android:text="形状　　" >
+        </TextView>
+
+	    <Spinner
+	        android:id="@+id/medinput_Spn_unit"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:entries="@array/SpnItm_med1" >
+
+	    </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NomalStyle"
+            android:text="摂取方法" >
+        </TextView>
+
+	    <Spinner
+	        android:id="@+id/medinput_Spn_intake"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:entries="@array/SpnItm_med2" >
+
+	    </Spinner>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/NomalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1回の摂取量" >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_dose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusDown="@+id/edit_total"
+            android:nextFocusRight="@+id/edit_total"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/txtvw_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NomalStyle"
+            android:text="錠" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NomalStyle"
+            android:text="日分" >
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NomalStyle"
+            android:text="摂取時間の設定" >
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="　" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NomalStyle"
+            android:text="その他" >
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/medinp_chkBox_etc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <ViewSwitcher
+        android:id="@+id/switcher1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out">
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+                    style="@style/NomalStyle"
+		            android:text="時間帯" >
+		        </TextView>
+
+			    <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content">
+
+			        <TextView
+			            android:layout_width="0dp"
+			            android:layout_height="wrap_content"
+	                    android:layout_weight="1"
+			            android:text="　" >
+			        </TextView>
+
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+	                    style="@style/NomalStyle"
+			            android:text="朝" >
+			        </TextView>
+
+
+			        <CheckBox
+			            android:id="@+id/medinp_chkBox_mon"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"/>
+
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+	                    style="@style/NomalStyle"
+			            android:text="昼" >
+			        </TextView>
+
+			        <CheckBox
+			            android:id="@+id/medinp_chkBox_aft"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"/>
+
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+	                    style="@style/NomalStyle"
+			            android:text="夜" >
+			        </TextView>
+
+			        <CheckBox
+			            android:id="@+id/medinp_chkBox_eve"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"/>
+
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+	                    style="@style/NomalStyle"
+			            android:text="就寝前" >
+			        </TextView>
+
+			        <CheckBox
+			            android:id="@+id/medinp_chkBox_ngt"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"/>
+			    </LinearLayout>
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+                    style="@style/NomalStyle"
+		            android:text="タイミング" >
+		        </TextView>
+
+			    <Spinner
+			        android:id="@+id/medinput_Spn_timing"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:entries="@array/SpnItm_med3" >
+
+			    </Spinner>
+
+		    </LinearLayout>
+        </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+                    style="@style/NomalStyle"
+		            android:text="摂取方法を記入して下さい。" >
+		        </TextView>
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+
+		        <EditText
+		            android:id="@+id/edit_comment"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:ems="10" />
+		    </LinearLayout>
+        </LinearLayout>
+    </ViewSwitcher>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="　" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="　" >
+        </TextView>
+
+        <Button
+            android:id="@+id/medinp_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/NomalStyle"
+            android:text="データ登録" />
+    </LinearLayout>
+
+
+</LinearLayout>

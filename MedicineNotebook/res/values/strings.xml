@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">お薬手帳アプリ</string>
+    <string name="med_detailinfo_footer_btn1">履歴一覧</string>
+    <string name="med_detailinfo_footer_btn2">処方箋入力</string>
+    <string name="med_detailinfo_footer_btn3">アプリ終了</string>
+    <string name="med_detailinfo_footer_btn4">薬の削除</string>
+    <string name="med_detailinfo_footer_btn5">設定</string>
+    <string name="history_footer_btn1">処方箋入力</string>
+    <string name="history_footer_btn2">アプリ終了</string>
+    <string name="history_footer_btn3">設定</string>
+    <string name="history_footer_btn4"></string>
+    <string name="history_footer_btn5">設定</string>
+    <string name="presc_footer_btn1">薬入力へ</string>
+    <string name="presc_footer_btn2">登録</string>
+    <string name="s_menu_history">処方履歴</string>
+    <string name="s_menu_input_medicine">お薬追加</string>
+    <string name="s_menu_input">処方箋登録</string>
+    <string name="s_menu_setting">設定</string>
+    <string name="s_menu_exit">終了</string>
+    <string name="s_menu_delete">削除</string>
+    <string name="s_menu_about">バージョン情報</string>
+
+    <!-- データ取り込み画面　　　　 -->
+    <string name="s_menu_import">データ取込</string>
+    <string name="dataio_meddat">処方薬データテーブル</string>
+    <string name="dataio_mednote">お薬手帳情報テーブル</string>
+    <string name="dataio_mednote_detail">お薬手帳情報 明細テーブル</string>
+
+    <!-- Preference画面　　　　 -->
+    <string name="alerm_time_preference">時間帯設定</string>
+    <string name="pref_morning">朝</string>
+    <string name="pref_morning_summary">朝食の時間：</string>
+    <string name="pref_lunch">昼</string>
+    <string name="pref_lunch_summary">昼食の時間：</string>
+    <string name="pref_dinner">夜</string>
+    <string name="pref_dinner_summary">夕食の時間：</string>
+    <string name="pref_night">就寝前</string>
+    <string name="pref_night_summary">就寝の時間：</string>
+    <string name="intake_timming_preference">摂取タイミング設定</string>
+    <string name="pref_befor">食前</string>
+    <string name="pref_befor_summary">食前 </string>
+    <string name="pref_after">食後</string>
+    <string name="pref_after_summary">食後 </string>
+    <string name="pref_between">食間</string>
+    <string name="pref_between_summary">食後 </string>
+    <string name="alerm_preference">アラーム設定</string>
+    <string name="pref_alerm_on">鳴らす</string>
+    <string name="pref_alerm_on_summary">アラームの有効/無効の設定</string>
+    <string name="pref_alarm_sound">アラーム音</string>
+    <string name="pref_alarm_sound_summary">アラーム音を選択</string>
+    <string name="pref_vibrator">バイブレーター設定</string>
+    <string name="pref_vibrator_summary">バイブレーター有効/無効の設定</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="title_activity_splash">お薬手帳</string>
+    <string name="s_copyright">Copyright© Infotec,Inc. All Rights Reserved</string>
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="　" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtvw_hospital"
+            style="@style/NomalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="病院名" >
+        </TextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_hospital"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtvw_pharmacy"
+            style="@style/NomalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="薬局名" >
+        </TextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_pharmacy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtvw_date"
+            style="@style/NomalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="処方日" >
+        </TextView>
+
+        <DatePicker
+            android:id="@+id/picker_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="　" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="　" >
+        </TextView>
+
+        <Button
+            android:id="@+id/presc_btn1"
+            style="@style/NomalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/presc_footer_btn1" />
+    </LinearLayout>
+
+</LinearLayout>

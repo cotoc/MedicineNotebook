@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- 押されているときの色 -->
+	<item android:state_pressed="true"  android:drawable="@color/list_selected" />
+
+	<!-- チェックされた時の色 -->
+	<item android:state_checked="true"  android:drawable="@color/list_checked" />
+
+	<!-- トラックボールなどで動かしたときに対象になったときの色(チェックの有無ではない) -->
+	<item android:state_selected="true" android:drawable="@color/blue" />
+
+	<!--  何につかうんだろう？ -->
+	<item android:state_focused="true"  android:drawable="@color/red" />
+
+	<!--  それ以外 -->
+	<item android:drawable="@color/list_default" />
+
+</selector>
